@@ -4,8 +4,16 @@ TR Repository Top Contributors Analyzer
 Simple GUI to find top contributors for each repository
 """
 
-import tkinter as tk
-from tkinter import ttk, scrolledtext, messagebox
+try:
+    import tkinter as tk
+    from tkinter import ttk, scrolledtext, messagebox
+except ImportError:
+    print("❌ Error: tkinter is not available on this system.")
+    print("This GUI tool requires tkinter to be installed.")
+    print("📖 See TROUBLESHOOTING.md for installation instructions.")
+    print("\n💡 Alternative: Use the command-line tools like repo_contributor_analyzer.py")
+    exit(1)
+
 import subprocess
 import tempfile
 import os

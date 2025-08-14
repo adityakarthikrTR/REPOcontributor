@@ -102,6 +102,12 @@ def find_git_repos(search_path: str, max_depth: int = 3) -> List[str]:
     git_repos = []
     search_path = Path(search_path)
     
+    # First check if the search path itself is a git repository
+    if (search_path / '.git').exists():
+        git_repos.append(str(search_path))
+        print(f"Found Git repo: {search_path}")
+        return git_repos
+    
     def scan_directory(path: Path, current_depth: int):
         if current_depth > max_depth:
             return
