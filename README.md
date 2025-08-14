@@ -84,6 +84,8 @@ python tr_bulk_analyzer.py
 - Internet connection for cloning repositories
 - tkinter (usually included with Python) for GUI tools
 
+**Note:** If you encounter issues with GUI tools or GitHub Copilot extension errors, see [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for detailed solutions.
+
 ## 📊 Output
 
 All tools provide:
@@ -135,6 +137,8 @@ python tr_bulk_analyzer.py
 ## 🤝 Contributing
 
 Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
+**Note:** If you encounter the error "Copilot took too long to get ready", this is a VS Code extension issue, not a repository issue. See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for solutions.
 
 ## 📄 License
 
